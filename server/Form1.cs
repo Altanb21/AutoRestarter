@@ -34,7 +34,7 @@ namespace server
             label2.Text = "Server Data Restarter Timer > " + +progressBar2.Value;
             Process[] server = Process.GetProcessesByName("Growtopia");
             progressBar2.Increment(1);
-            if (progressBar2.Value == 280000)
+            if (progressBar2.Value == 2400000) //3 days useful for free memory
             {
                 Process[] processes = Process.GetProcessesByName("Growtopia");
                 Process game1 = processes[0];
